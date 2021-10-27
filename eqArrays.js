@@ -12,16 +12,15 @@ const eqArrays = function (arr1, arr2) {
     trueOrFalse = false;
   } else {
     for (let i = 0; i < arr1.length; i++) {
-      for (let j = 0; j < arr2.length; j++) {
-        if (arr1[i] === arr2[j]) {
-          trueOrFalse = true;
-          return trueOrFalse;
-        } else if (arr1[i] !== arr2[j]) {
-          trueOrFalse = false;
-          return trueOrFalse;
-        }
+      if (arr1[i] === arr2[i]) {
+        trueOrFalse = trueOrFalse && true;
+      } else if (arr1[i] !== arr2[i]) {
+        trueOrFalse = trueOrFalse && false;
       }
     }
   }
+  return trueOrFalse;
 };
 
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+assertEqual(eqArrays([1, 4, 3], [1, 2, 3]), false);
