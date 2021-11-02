@@ -9,7 +9,7 @@ const eqArrays = require('./eqArrays');
 module.exports = {
   head: head,
   tail: tail,
-  middle: middle
+  middle: middle,
   assertEqual: assertEqual,
   assertArraysEqual: assertArraysEqual,
   eqArrays: eqArrays,
