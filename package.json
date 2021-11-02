@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hjonsu/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide: a preliminary iteration of lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/hjonsu/lotide.git"
   },
-  "author": "",
+  "author": "Hang Su",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hjonsu/lotide/issues"
